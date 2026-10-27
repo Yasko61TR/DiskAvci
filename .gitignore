@@ -1,0 +1,13 @@
+# Derleme çıktıları
+build/
+cmake-build-*/
+out/
+
+# Editör / IDE
+.vscode/
+.idea/
+*.swp
+
+# Tarama veritabanları (ileride)
+*.db
+*.sqlite
