@@ -1,5 +1,7 @@
 # DiskAvcı Tasarım Dokümanı
 
+> **Not (yapay zekâ kullanımı):** Bu belge, yapay zekâ (Claude) yardımıyla hazırlanmış bir taslaktır. Proje ilerledikçe gerçek gelişmelere göre güncellenecektir. "Doğrulanmadı" ve "ÖRNEK" etiketli yerler henüz kontrol edilmemiştir.
+
 Sürüm: taslak 0.1 · Tarih: 2026-10-26 · Yazar: Yasin Uzun
 
 Bu belge kod içermez; tasarım kararlarını, şema taslaklarını ve planı tanımlar. SQL ve komut örnekleri tasarımın parçasıdır.

@@ -1,5 +1,7 @@
 # DiskAvcı: Sorunlar ve Çözümler
 
+> **Not (yapay zekâ kullanımı):** Bu belge, yapay zekâ (Claude) yardımıyla hazırlanmış bir taslaktır. Proje ilerledikçe gerçek gelişmelere göre güncellenecektir. "Doğrulanmadı" ve "ÖRNEK" etiketli yerler henüz kontrol edilmemiştir.
+
 Bu belge, proje sırasında karşılaşılması muhtemel sorunları ve çözüm planlarını listeler. Her kayıt: **Belirti**, **Neden**, **Çözüm**, **Test**. Kayıtlar "olabilir" türündendir; gerçekleştikçe "Gerçekte ne oldu" notu eklenmesi önerilir (CV ve mülakat için değerli).
 
 Doğrulama etiketleri: **[D]** bu belge hazırlanırken kaynakla doğrulandı, **[?]** doğrulanmadı / kullanmadan önce kontrol et.

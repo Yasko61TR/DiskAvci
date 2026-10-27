@@ -1,5 +1,7 @@
 # DiskAvcı
 
+> **Not (yapay zekâ kullanımı):** Bu belge, yapay zekâ (Claude) yardımıyla hazırlanmış bir taslaktır. Proje ilerledikçe gerçek gelişmelere göre güncellenecektir. "Doğrulanmadı" ve "ÖRNEK" etiketli yerler henüz kontrol edilmemiştir.
+
 > C++17 ile yazılmış, tarama sonuçlarını **SQLite'ta zaman içinde saklayan** komut satırı disk analiz aracı.
 > *English: a C++17 command-line disk analyzer that stores every scan as a queryable SQLite snapshot, so you can ask "what grew in the last 7 days?" and find duplicate files, without a GUI or a server.*
 
