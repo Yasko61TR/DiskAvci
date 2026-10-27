@@ -5,7 +5,7 @@
 > C++17 ile yazılmış, tarama sonuçlarını **SQLite'ta zaman içinde saklayan** komut satırı disk analiz aracı.
 > *English: a C++17 command-line disk analyzer that stores every scan as a queryable SQLite snapshot, so you can ask "what grew in the last 7 days?" and find duplicate files, without a GUI or a server.*
 
-![CI](https://img.shields.io/badge/CI-yer%20tutucu-lightgrey)
+![CI](https://github.com/Yasko61TR/DiskAvci/actions/workflows/ci.yml/badge.svg)
 ![C++17](https://img.shields.io/badge/C%2B%2B-17-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Durum](https://img.shields.io/badge/durum-geli%C5%9Ftirme%20a%C5%9Famas%C4%B1nda-orange)
@@ -67,13 +67,13 @@ Ne olmadığı da açık olsun:
 ## Özellikler ve durum
 
 ### Aşama 1: Çekirdek (tek iş parçacıklı)
-- [ ] Özyinelemeli tarama (`std::filesystem`, hata kodlu arayüzler)
-- [ ] Hata toleransı: izin hatası, kilitli dosya, symlink döngüsü atlanır ve raporlanır
+- [x] Özyinelemeli tarama (`std::filesystem`, hata kodlu arayüzler)
+- [x] Hata toleransı: izin hatası ve symlink döngüsü atlanır ve raporlanır (kilitli dosya senaryosu henüz test edilmedi)
 - [ ] SQLite'a snapshot kaydı (toplu transaction)
-- [ ] En büyük N dosya / klasör
+- [ ] En büyük N dosya / klasör _(dosyalar tamam, klasörler henüz yok)_
 - [ ] Uzantıya göre dağılım
 - [ ] Hard link'leri çift saymama
-- [ ] Windows ve Linux'ta derleme + test (GitHub Actions)
+- [ ] Windows ve Linux'ta derleme + test (GitHub Actions) _(şu an yalnızca Linux)_
 
 ### Aşama 2: Performans ve kopyalar
 - [ ] Çok iş parçacıklı tarama (thread pool, tek veritabanı yazıcısı)
@@ -116,8 +116,6 @@ cmake -S . -B build
 cmake --build build --config Release
 ctest --test-dir build -C Release --output-on-failure
 ```
-
-> Repo adresi yer tutucudur; gerçek adres belli olunca güncelle.
 
 **Windows'ta Türkçe karakterler:** Terminalde `ğ ş ı İ ö ü ç` düzgün görünmüyorsa konsolu UTF-8'e al (`chcp 65001`) ve Windows Terminal kullan. DiskAvcı yolları dahili olarak UTF-8 saklar (ayrıntı: `docs/SORUNLAR_VE_COZUMLER.md`).
 
